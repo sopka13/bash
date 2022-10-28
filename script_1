@@ -1,0 +1,23 @@
+#!/bin/bash
+
+user=sergey
+user_1=sereg
+
+# Search username in passwd file
+
+if grep $user /etc/passwd
+then
+	echo "The $user exists!"
+else
+	echo "The $user not found"
+fi
+
+if grep $user_1 /etc/passwd
+then
+	echo "The $user_1 exists!"
+elif grep $user /etc/passwd
+then
+	echo "The $user_1 not found, but $user exists"
+else
+	echo "The $user and $user_1 not found"
+fi

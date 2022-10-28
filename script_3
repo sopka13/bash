@@ -1,0 +1,23 @@
+#!/bin/bash
+# Check files
+
+# -d file			Check exists file and is it a directory
+# -e file			Check exists file
+# -f file			Check exists file and is it a file
+# -r file			Check exists file and can i read it
+# -s file			Check exists file and empty it or not
+# -w file			Check exists file and can i write it
+# -x file			Check exists file and can i execute it
+# file1 -nt file2	Check file1 never then file2
+# file1 -ot file2	Check file1 older then file2
+# -O file			Check exists file and i am the owner it
+# -G file			Check exists file and chech its GUID equal to my GUID
+
+mydir=$(pwd)
+
+if [ -d $mydir ]
+then
+	echo "Yes, $mydir is a directory"
+else
+	echo "No, $mydir is not a directory"
+fi

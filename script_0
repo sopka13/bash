@@ -1,0 +1,24 @@
+#!/bin/bash
+
+var_0=5
+var_1="Five"
+
+mydir=$(pwd)
+kernel_version=`uname -r`
+
+var_2=$((1 + 2))
+var_3=$(($var_0 + $var_2))
+
+# Display User home dir
+echo "The curent user home dir is: $HOME"
+
+# Display variables
+echo "The $var_0 is a $var_1"
+
+# Display vars from commands results
+echo "Mydir: $mydir"
+echo "Kernel version: $kernel_version"
+
+# Vars with calculation results
+echo "1 + 2 = $var_2"
+echo "var_0 + var_2 = $var_3"

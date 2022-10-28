@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# Compare numbers
+# -eq	=>	'=='
+# -ge	=>	'>='
+# -gt	=>	'>'
+# -le	=>	'<='
+# -lt	=>	'<'
+# -ne	=>	'!='
+
+vall=6
+
+if [ $vall -gt 5 ]
+then
+	echo "$vall > 5"
+else
+	echo "$vall !> 5"
+fi
+
+# Compare strings
+# str1 = str2
+# str1 != str2
+# str1 < str2				# Need escape character
+# str1 > str2				# Need escape character
+# -n str1		=>	'>= 0'
+# -z str1		=>	'== 0'
+
+str1=ona
+str2=ona
+
+echo "str1 = $str1; str2 = $str2"
+if [ $str1 = $str2 ]
+then
+	echo "$str1 = $str2"
+else
+	echo "$str1 != $str2"
+fi
+
+if [ $str1 != $str2 ]
+then
+	echo "$str1 != $str2"
+else
+	echo "$str1 = $str2"
+fi
+
+if [ $str1 \> $str2 ]
+then
+	echo "$str1 > $str2"
+else
+	echo "$str1 !> $str2"
+fi
+
+if [ $str1 \< $str2 ]
+then
+	echo "$str1 < $str2"
+else
+	echo "$str1 !< $str2"
+fi
