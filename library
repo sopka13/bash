@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# $?		Result last command (0 - success)
+# &&		And (com1 && com2 => com2 will start if com1 return success)
+# ||		Or (com1 || com 2 => com2 will start if com1 return faill)
+# exit N	Exit with N status (N -> number)
+
+echo $?
+exit 12
